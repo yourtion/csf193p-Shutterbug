@@ -58,10 +58,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Shutterbug" id="MyJ-Fh-NBz"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="M98-vB-su3">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="fetchPhotos" destination="mZO-ep-96n" eventType="valueChanged" id="q3G-6Z-Opn"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAD-yY-k3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-1009"/>
+            <point key="canvasLocation" x="2012" y="-1102"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="y4f-86-0L4">
