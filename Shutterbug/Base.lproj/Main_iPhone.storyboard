@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-QU-ScJ">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pX8-QU-ScJ">
                                 <rect key="frame" x="141" y="266" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,6 +80,8 @@
                             <constraint firstAttribute="trailing" secondItem="Zyp-yk-nAl" secondAttribute="trailing" id="Fbo-z6-MaR"/>
                             <constraint firstItem="Zyp-yk-nAl" firstAttribute="leading" secondItem="OAN-Ya-s4z" secondAttribute="leading" id="JUb-v1-rgv"/>
                             <constraint firstItem="Zyp-yk-nAl" firstAttribute="top" secondItem="OAN-Ya-s4z" secondAttribute="top" id="VSQ-Hi-mwv"/>
+                            <constraint firstItem="pX8-QU-ScJ" firstAttribute="leading" secondItem="OAN-Ya-s4z" secondAttribute="leading" constant="141" id="dyK-1u-1tI"/>
+                            <constraint firstItem="pX8-QU-ScJ" firstAttribute="centerY" secondItem="Zyp-yk-nAl" secondAttribute="centerY" id="tAQ-Yp-uV4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zuc-v7-Ygf"/>
