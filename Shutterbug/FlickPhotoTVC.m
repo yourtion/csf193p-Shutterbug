@@ -53,6 +53,9 @@
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     id detail = self.splitViewController.viewControllers[1];
+    if ([detail isKindOfClass:[UINavigationController class]]) {
+        detail = [((UINavigationController*) detail).viewControllers firstObject];
+    }
     if ([detail isKindOfClass:[imageViewController class]]) {
         [self prepareImageVierController:detail toDisplayPhoto:self.photos[indexPath.row]];
     }

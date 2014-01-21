@@ -10,13 +10,13 @@
                 <splitViewController id="2b3-ZA-o3s" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
-                        <segue destination="mZO-ep-96n" kind="relationship" relationship="masterViewController" id="Ps7-K8-fGZ"/>
-                        <segue destination="hEN-oo-sXa" kind="relationship" relationship="detailViewController" id="183-dI-zgH"/>
+                        <segue destination="deX-PX-MWc" kind="relationship" relationship="detailViewController" id="183-dI-zgH"/>
+                        <segue destination="BNU-kt-9j0" kind="relationship" relationship="masterViewController" id="ZeM-ph-112"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rx-uC-LzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="-992"/>
+            <point key="canvasLocation" x="-168" y="-920"/>
         </scene>
         <!--Just Posted Flickr PhotosTVC - Shutterbug-->
         <scene sceneID="8Lw-Q1-QAz">
@@ -28,7 +28,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FlickrPhotoCell" textLabel="xkO-sR-vcq" detailTextLabel="uYY-af-nZB" style="IBUITableViewCellStyleSubtitle" id="uCp-uL-axQ">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uCp-uL-axQ" id="qGM-zv-IhH">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -61,7 +61,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAD-yY-k3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="-929"/>
+            <point key="canvasLocation" x="1954" y="-1009"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="y4f-86-0L4">
@@ -104,12 +104,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2o-6a-Zx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="177"/>
+            <point key="canvasLocation" x="1882" y="177"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Shutterbug-->
         <scene sceneID="mRW-1e-GZE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BNU-kt-9j0" sceneMemberID="viewController">
+                <navigationController title="Shutterbug" automaticallyAdjustsScrollViewInsets="NO" id="BNU-kt-9j0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="owh-eO-CrG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -122,7 +122,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbs-rp-irt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="-1015"/>
+            <point key="canvasLocation" x="1036" y="-1024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Ij-bi-qXG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deX-PX-MWc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVb-3S-SS9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hEN-oo-sXa" kind="relationship" relationship="rootViewController" id="Eza-AC-Hzv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p90-lT-vyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="177"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -130,7 +148,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ps7-K8-fGZ"/>
-    </inferredMetricsTieBreakers>
 </document>
